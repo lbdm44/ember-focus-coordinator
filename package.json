@@ -12,9 +12,17 @@
     "test": "tests"
   },
   "repository": "",
+  "lint-staged": {
+    "*.js": ["prettier --write", "eslint", "git add"],
+    "*.ts": ["prettier --parser typescript --write", "git add"]
+  },
+  "pre-commit": [
+    "lint:staged"
+  ],
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
+    "lint:staged": "lint-staged",
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each",
@@ -55,7 +63,10 @@
     "ember-try": "^0.2.23",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^6.0.1",
+    "lint-staged": "^7.3.0",
     "loader.js": "^4.2.3",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.14.3",
     "qunit-dom": "^0.8.0",
     "typescript": "^3.1.1"
   },
