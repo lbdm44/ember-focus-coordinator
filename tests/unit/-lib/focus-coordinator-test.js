@@ -1,23 +1,23 @@
-import { module, test } from "qunit";
-import FocusCoordinator from "ember-focus-coordinator/-lib/focus-coordinator";
+import { module, test } from 'qunit';
+import FocusCoordinator from 'ember-focus-coordinator/-lib/focus-coordinator';
 
-module("Unit | lib | focus-coordinator", function() {
-  test("it pushes items into the stack when focusing", function(assert) {
+module('Unit | lib | focus-coordinator', function () {
+  test('it pushes items into the stack when focusing', function (assert) {
     const focusCoordinator = new FocusCoordinator();
-    const itemSelector = ".some-item";
+    const itemSelector = '.some-item';
 
     focusCoordinator.focus(itemSelector);
 
-    assert.equal(
+    assert.deepEqual(
       focusCoordinator.stack.length,
       1,
-      "has one item in the focus stack"
+      'has one item in the focus stack'
     );
 
-    assert.equal(
+    assert.deepEqual(
       focusCoordinator.stack[0],
       itemSelector,
-      "has the correct item in the stack"
+      'has the correct item in the stack'
     );
   });
 });

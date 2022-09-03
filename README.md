@@ -1,27 +1,32 @@
-ember-focus-coordinator
-==============================================================================
+# ember-focus-coordinator
 
 [Short description of the addon.]
 
-Installation
-------------------------------------------------------------------------------
+
+## Compatibility
+
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v14 or above
+
+
+## Installation
 
 ```
 ember install ember-focus-coordinator
 ```
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 [Longer description of how to use the addon in apps.]
 
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
-### Installation
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
+<<<<<<< HEAD
 * `git clone <repository-url>`
 * `cd ember-focus-coordinator`
 * `npm install`
@@ -46,5 +51,9 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 
 License
 ------------------------------------------------------------------------------
+=======
+
+## License
+>>>>>>> fbbb502 (v3.1.2...v4.6.0)
 
 This project is licensed under the [MIT License](LICENSE.md).
